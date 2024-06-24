@@ -1,5 +1,6 @@
 # Web Diff
-[![License](https://img.shields.io/github/license/tomdewildt/ssh-provision)](https://github.com/tomdewildt/web-diff/blob/master/LICENSE)
+[![Scheduler](https://img.shields.io/github/actions/workflow/status/tomdewildt/web-diff/scheduler.yml?branch=master&label=scheduler)](https://github.com/tomdewildt/web-diff/actions/workflows/scheduler.yml)
+[![License](https://img.shields.io/github/license/tomdewildt/web-diff)](https://github.com/tomdewildt/web-diff/blob/master/LICENSE)
 
 A simple tool to compare a website against a snapshot to detect changes.
 
