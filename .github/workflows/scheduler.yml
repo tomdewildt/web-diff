@@ -12,7 +12,7 @@ jobs:
             matrix:
                 combination:
                     - url: https://tix.concertgebouw.nl/nl/buyingflow/tickets/38567/92801/
-                      snapshot: ./snapshots/tix.concertgebouw.nl.html
+                      snapshot: ./snapshots/tix.concertgebouw.nl.2.html
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
