@@ -1,5 +1,7 @@
 name: scheduler
 on:
+    pull_request:
+        types: [opened, synchronize]
     schedule:
         - cron: "0 0,12 * * *"
 
