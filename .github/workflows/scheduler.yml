@@ -1,7 +1,5 @@
 name: scheduler
 on:
-    pull_request:
-        types: [opened, synchronize]
     schedule:
         - cron: "0 0,12 * * *"
 
@@ -12,9 +10,9 @@ jobs:
             matrix:
                 combination:
                     - url: https://tix.concertgebouw.nl/nl/buyingflow/tickets/38567/92801/
-                      snapshot: ./snapshots/tix.concertgebouw.nl.2.html
+                      snapshot: ./snapshots/tix.concertgebouw.nl.html
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
-            - name: Run web diff
+            - name: Run diff
               run: ./src/web-diff.sh ${{ matrix.combination.url }} ${{ matrix.combination.snapshot }}
