@@ -13,6 +13,6 @@ jobs:
                       snapshot: ./snapshots/tix.concertgebouw.nl.html
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v5
+              uses: actions/checkout@v6
             - name: Run diff
               run: ./src/web-diff.sh ${{ matrix.combination.url }} ${{ matrix.combination.snapshot }}
